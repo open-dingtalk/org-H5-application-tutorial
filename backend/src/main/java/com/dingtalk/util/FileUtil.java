@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.util;
+package com.dingtalk.util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

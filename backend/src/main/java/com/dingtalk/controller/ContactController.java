@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.controller;
+package com.dingtalk.controller;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,11 +12,11 @@ import com.dingtalk.api.response.OapiDepartmentListResponse;
 import com.dingtalk.api.response.OapiDepartmentListResponse.Department;
 import com.dingtalk.api.response.OapiUserSimplelistResponse;
 import com.dingtalk.api.response.OapiUserSimplelistResponse.Userlist;
-import com.dingtalk.h5app.quickstart.config.AppConfig;
-import com.dingtalk.h5app.quickstart.domain.DepartmentDTO;
-import com.dingtalk.h5app.quickstart.domain.ServiceResult;
-import com.dingtalk.h5app.quickstart.domain.UserDTO;
-import com.dingtalk.h5app.quickstart.service.TokenService;
+import com.dingtalk.domain.DepartmentDTO;
+import com.dingtalk.config.AppConfig;
+import com.dingtalk.domain.ServiceResult;
+import com.dingtalk.domain.UserDTO;
+import com.dingtalk.service.TokenService;
 import com.taobao.api.ApiException;
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
@@ -27,8 +27,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.dingtalk.h5app.quickstart.config.UrlConstant.URL_DEPARTMENT_LIST;
-import static com.dingtalk.h5app.quickstart.config.UrlConstant.URL_USER_SIMPLELIST;
+import static com.dingtalk.config.UrlConstant.URL_DEPARTMENT_LIST;
+import static com.dingtalk.config.UrlConstant.URL_USER_SIMPLELIST;
 
 /**
  * 钉钉企业内部微应用DEMO, 实现了通讯录功能

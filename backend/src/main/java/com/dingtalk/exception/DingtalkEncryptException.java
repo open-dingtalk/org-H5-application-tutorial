@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.exception;
+package com.dingtalk.exception;
 
 import java.util.HashMap;
 import java.util.Map;

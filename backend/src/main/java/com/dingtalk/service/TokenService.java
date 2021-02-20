@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.service;
+package com.dingtalk.service;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -7,17 +7,15 @@ import com.dingtalk.api.request.OapiGetJsapiTicketRequest;
 import com.dingtalk.api.request.OapiGettokenRequest;
 import com.dingtalk.api.response.OapiGetJsapiTicketResponse;
 import com.dingtalk.api.response.OapiGettokenResponse;
-import com.dingtalk.h5app.quickstart.config.AppConfig;
-import com.dingtalk.h5app.quickstart.domain.ServiceResult;
-import com.dingtalk.h5app.quickstart.util.FileUtil;
+import com.dingtalk.config.AppConfig;
+import com.dingtalk.config.UrlConstant;
+import com.dingtalk.domain.ServiceResult;
+import com.dingtalk.util.FileUtil;
 import com.taobao.api.ApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import static com.dingtalk.h5app.quickstart.config.UrlConstant.URL_GET_JSTICKET;
-import static com.dingtalk.h5app.quickstart.config.UrlConstant.URL_GET_TOKEN;
 
 /**
  * 获取access_token 和 jsTicket方法
@@ -56,7 +54,7 @@ public class TokenService {
             return ServiceResult.success(accessToken);
         }
 
-        DefaultDingTalkClient client = new DefaultDingTalkClient(URL_GET_TOKEN);
+        DefaultDingTalkClient client = new DefaultDingTalkClient(UrlConstant.URL_GET_TOKEN);
         OapiGettokenRequest request = new OapiGettokenRequest();
         OapiGettokenResponse response;
 
@@ -96,7 +94,7 @@ public class TokenService {
         }
         accessToken = tokenSr.getResult();
 
-        DefaultDingTalkClient client = new DefaultDingTalkClient(URL_GET_JSTICKET);
+        DefaultDingTalkClient client = new DefaultDingTalkClient(UrlConstant.URL_GET_JSTICKET);
         OapiGetJsapiTicketRequest request = new OapiGetJsapiTicketRequest();
         OapiGetJsapiTicketResponse response;
 

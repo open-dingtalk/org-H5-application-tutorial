@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.controller;
+package com.dingtalk.controller;
 
 import com.dingtalk.api.DefaultDingTalkClient;
 import com.dingtalk.api.DingTalkClient;
@@ -6,13 +6,13 @@ import com.dingtalk.api.request.OapiUserGetRequest;
 import com.dingtalk.api.request.OapiUserGetuserinfoRequest;
 import com.dingtalk.api.response.OapiUserGetResponse;
 import com.dingtalk.api.response.OapiUserGetuserinfoResponse;
-import com.dingtalk.h5app.quickstart.config.AppConfig;
-import com.dingtalk.h5app.quickstart.domain.ConfigDTO;
-import com.dingtalk.h5app.quickstart.domain.ServiceResult;
-import com.dingtalk.h5app.quickstart.domain.UserDTO;
-import com.dingtalk.h5app.quickstart.exception.DingtalkEncryptException;
-import com.dingtalk.h5app.quickstart.service.TokenService;
-import com.dingtalk.h5app.quickstart.util.JsApiSignature;
+import com.dingtalk.domain.ConfigDTO;
+import com.dingtalk.config.AppConfig;
+import com.dingtalk.domain.ServiceResult;
+import com.dingtalk.domain.UserDTO;
+import com.dingtalk.exception.DingtalkEncryptException;
+import com.dingtalk.service.TokenService;
+import com.dingtalk.util.JsApiSignature;
 import com.taobao.api.ApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,8 +23,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.dingtalk.h5app.quickstart.config.UrlConstant.URL_GET_USER_INFO;
-import static com.dingtalk.h5app.quickstart.config.UrlConstant.URL_USER_GET;
+import static com.dingtalk.config.UrlConstant.URL_GET_USER_INFO;
+import static com.dingtalk.config.UrlConstant.URL_USER_GET;
 
 /**
  * 钉钉企业内部微应用DEMO, 实现了身份验证（免登）功能

@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.domain;
+package com.dingtalk.domain;
 
 import java.io.Serializable;
 

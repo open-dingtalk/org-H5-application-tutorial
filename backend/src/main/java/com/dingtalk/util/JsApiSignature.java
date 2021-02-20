@@ -1,11 +1,11 @@
-package com.dingtalk.h5app.quickstart.util;
+package com.dingtalk.util;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Formatter;
 
-import com.dingtalk.h5app.quickstart.exception.DingtalkEncryptException;
+import com.dingtalk.exception.DingtalkEncryptException;
 
 /**
  * 钉钉jsapi签名工具类

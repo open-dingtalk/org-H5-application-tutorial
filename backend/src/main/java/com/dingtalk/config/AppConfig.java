@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.config;
+package com.dingtalk.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

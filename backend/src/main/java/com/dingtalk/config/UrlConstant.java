@@ -1,4 +1,4 @@
-package com.dingtalk.h5app.quickstart.config;
+package com.dingtalk.config;
 
 /**
  * 钉钉开放接口网关常量
