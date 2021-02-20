@@ -1,0 +1,14 @@
+target/
+backend/src/main/resources/public
+backend/src/main/resources/public/*
+
+*.log
+*.iml
+.idea
+.idea/*
+.DS_Store
+
+application-dev.properties
+node_modules/
+
+/Permanent_Data
